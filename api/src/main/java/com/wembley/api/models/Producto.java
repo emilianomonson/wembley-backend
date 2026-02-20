@@ -17,14 +17,18 @@ public class Producto {
     private String nombre;
 
     @Column(columnDefinition = "TEXT")
-    private String descripcion; // ¡Aquí está el nuevo campo!
+    private String descripcion;
 
-    private String categoria; // Ej: "Botines", "Indumentaria", "Accesorios"
+    private String categoria;
 
-    private String marca; // Ej: "Nike", "Adidas"
+    private String marca;
 
     @Column(nullable = false)
-    private BigDecimal precio;
+    private BigDecimal precio; // Este queda intacto (Será el Precio de Lista)
+
+    // --- NUEVO CAMPO ---
+    private BigDecimal precioEfectivo; // Precio con descuento (Ej: 150000)
+    // -------------------
 
     private Integer stock;
 
