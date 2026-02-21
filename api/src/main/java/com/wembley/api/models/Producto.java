@@ -24,11 +24,7 @@ public class Producto {
     private String marca;
 
     @Column(nullable = false)
-    private BigDecimal precio; // Este queda intacto (Será el Precio de Lista)
-
-    // --- NUEVO CAMPO ---
-    private BigDecimal precioEfectivo; // Precio con descuento (Ej: 150000)
-    // -------------------
+    private BigDecimal precio; // Volvemos a tu precio original de lista
 
     private Integer stock;
 
